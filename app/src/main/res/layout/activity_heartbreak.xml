@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/heartbreakFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:text="HEARTBREAK SHAYARI FOR YOU"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ScrollView
+                android:id="@+id/HeartBreakShayariscrollView"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:background="@drawable/heartbreak"
+                >
+
+                <TextView
+                    android:id="@+id/heartbreakShayariText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textAlignment="center"
+                    android:textSize="@dimen/shayari_text_size"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:background="#ddffffff"
+                    />
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

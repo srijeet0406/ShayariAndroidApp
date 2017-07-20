@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.schatt204.myapplication.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="First Name"
+            android:layout_above="@+id/lastName"
+            android:layout_marginTop="94dp" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="Last Name"
+            android:layout_alignLeft="@+id/firstName"
+            android:layout_alignStart="@+id/firstName"
+            />
+
+        <EditText
+            android:id="@+id/signupemail"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="Email (username)"
+            android:layout_below="@+id/lastName"
+            android:layout_alignLeft="@+id/lastName"
+            android:layout_alignStart="@+id/lastName" />
+
+        <EditText
+            android:id="@+id/signupPswd"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/signupemail"
+            android:layout_alignLeft="@+id/signupemail"
+            android:layout_alignStart="@+id/signupemail" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="Address"
+            android:layout_below="@+id/signupPswd"
+            android:layout_alignLeft="@+id/signupPswd"
+            android:layout_alignStart="@+id/signupPswd" />
+
+
+
+        <Button
+            android:id="@+id/signupButton2"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:layout_below="@+id/address"
+            android:layout_alignLeft="@+id/address"
+            android:layout_alignStart="@+id/address" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
